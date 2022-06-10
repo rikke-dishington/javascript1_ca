@@ -1,0 +1,139 @@
+@import "imports/layout.css";
+@import "imports/details.css";
+/* General */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #3e6dc9;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+h1 {
+  margin-bottom: 1em;
+  font-size: 1.6em;
+  text-transform: capitalize;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.results {
+  margin-top: 40px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* Header */
+header {
+  padding-bottom: 40px;
+}
+ul {
+  padding: 0px;
+}
+
+li {
+  display: inline;
+}
+
+nav a {
+  padding: 20px;
+}
+
+.current {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: black;
+}
+
+/* Error */
+.error {
+  border: 1px solid var(--primary-colour);
+  color: var(--primary-colour);
+  background: var(--light-grey);
+  padding: 1em;
+}
+
+.error:after {
+  content: "An error occurred.";
+}
+
+/* Loader */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid var(--primary-colour);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Contact form */
+form {
+  padding: 20px;
+  background: white;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 16px 0px;
+  border: none;
+  font-size: 16px;
+  background-color: #eee;
+}
+
+button {
+  background: #3e6dc9;
+  border: none;
+  width: 150px;
+  padding: 20px;
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 12px;
+  margin-top: 2px;
+}
