@@ -8,19 +8,14 @@ body {
 
 body {
   background: #3e6dc9;
-  font-family: "Open Sans", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
 }
 
-.content {
-  flex: 1 0 auto;
-}
-
 h1 {
   margin-bottom: 1em;
-  font-size: 1.6em;
-  text-transform: capitalize;
+  font-size: 1.5em;
 }
 
 .container {
@@ -68,14 +63,13 @@ a:hover {
 
 /* Error */
 .error {
-  border: 1px solid var(--primary-colour);
-  color: var(--primary-colour);
-  background: var(--light-grey);
+  color: red;
+  background: red;
   padding: 1em;
 }
 
 .error:after {
-  content: "An error occurred.";
+  content: "Oh, an error occurred.";
 }
 
 /* Loader */
