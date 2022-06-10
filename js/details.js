@@ -1,4 +1,4 @@
-const detailContainer = document.querySelector(".game-details");
+const detailContainer = document.querySelector(".users-details");
 
 const queryString = document.location.search;
 
