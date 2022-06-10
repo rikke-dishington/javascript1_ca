@@ -26,9 +26,9 @@ async function fetchUsers() {
       const userEmail = users[i].email;
 
       resultsContainer.innerHTML += `<div class="users">
-                                            <a href="details.html?id=${users.id}"><img src="${usersAvatar}"/></a>
-                                            <a href="details.html?id=${users.id}"><h4>${usersFirstName}</h4>
-                                            <a href="details.html?id=${users.id}"><p>${userEmail}</p>
+                                            <a href="detail.html?id=${users.id}"><img src="${usersAvatar}"/></a>
+                                            <a href="detail.html?id=${users.id}"><h4>${usersFirstName}</h4>
+                                            <a href="detail.html?id=${users.id}"><p>${userEmail}</p>
                                         </div>`;
     }
   } catch (error) {
