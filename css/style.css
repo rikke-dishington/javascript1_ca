@@ -1,6 +1,3 @@
-@import "imports/layout.css";
-@import "imports/details.css";
-
 /* General */
 html,
 body {
@@ -64,7 +61,7 @@ a:hover {
 
 /* Error */
 .error {
-  color: red;
+  color: white;
   background: red;
   padding: 1em;
 }
@@ -93,6 +90,8 @@ a:hover {
     transform: rotate(360deg);
   }
 }
+
+/* Details */
 
 /* Contact form */
 form {

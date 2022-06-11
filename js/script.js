@@ -24,16 +24,17 @@ async function fetchUsers() {
       const usersAvatar = users[i].avatar;
       const usersFirstName = users[i].first_name;
       const userEmail = users[i].email;
+      const userId = users[i].id;
 
       resultsContainer.innerHTML += `<div class="users">
-                                            <a href="detail.html?id=${users.id}"><img src="${usersAvatar}"/></a>
-                                            <a href="detail.html?id=${users.id}"><h4>${usersFirstName}</h4>
-                                            <a href="detail.html?id=${users.id}"><p>${userEmail}</p>
+                                            <a href="detail.html?id=${userId}"><img src="${usersAvatar}"/></a>
+                                            <a href="detail.html?id=${userId}"><h4>${usersFirstName}</h4>
+                                            <a href="detail.html?id=${userId}"><p>${userEmail}</p>
                                         </div>`;
     }
   } catch (error) {
     console.log(error);
-    resultsContainer.innerHTML = message("Oh no! An error occurred");
+    resultsContainer.innerHTML = message("error", error);
   }
 }
 
